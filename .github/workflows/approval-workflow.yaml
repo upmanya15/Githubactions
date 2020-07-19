@@ -1,5 +1,10 @@
 name : Team Approval Workflow
-on: pull_request_review
+on:
+  push:
+    branches: [ master ]
+  pull_request_review:
+    branches: [ master ]
+
 
 jobs:
   labelWhenApproved:
